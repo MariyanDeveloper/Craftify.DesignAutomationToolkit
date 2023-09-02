@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+      <UserSecretsId>981fb602-b27d-4831-9d4a-e8cd38e312b0</UserSecretsId>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Craftify.AutodeskAuthenticationToolkit" Version="1.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Craftify.DesignAutomationToolkit.MicrosoftDependencyInjection\Craftify.DesignAutomationToolkit.MicrosoftDependencyInjection.csproj" />
+      <ProjectReference Include="..\Craftify.DesignAutomationToolkit\Craftify.DesignAutomationToolkit.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="AppBundles\" />
+      <Folder Include="SampleFiles\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="SampleFiles\DeleteWalls2023.rvt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="AppBundles\DeleteWalls.zip">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+    
+
+</Project>

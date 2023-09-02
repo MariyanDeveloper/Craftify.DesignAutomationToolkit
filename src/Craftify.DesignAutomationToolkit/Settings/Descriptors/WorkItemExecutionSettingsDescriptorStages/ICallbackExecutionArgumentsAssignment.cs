@@ -1,0 +1,6 @@
+﻿namespace Craftify.DesignAutomationToolkit.Settings.Descriptors.WorkItemExecutionSettingsDescriptorStages;
+
+public interface ICallbackExecutionArgumentsAssignment
+{
+    ICallbackExecutionArgumentsAssignment WithCallbackBaseUrl(string callbackBaseUrl);
+}

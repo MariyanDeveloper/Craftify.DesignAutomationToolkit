@@ -1,0 +1,83 @@
+[08/26/2023 06:03:09] Job information:
+{
+  "CommandLine": [
+    "$(engine.path)\\revitcoreconsole.exe /i \"$(args[rvtFile].path)\" /al \"$(appbundles[mariyan_dev_appBundle].path)\""
+  ],
+  "Settings": {
+    "dasOpenNetwork": {
+      "value": "true",
+      "isEnvironmentVariable": true
+    }
+  },
+  "Id": "f928e4e2a28f427995ae7f5faef9a832",
+  "ActivityId": "mariyanDevDesignTest.mariyan_dev_activity+mariyanDevActivityAlias",
+  "EngineId": "Autodesk.Revit_2023!112",
+  "Apps": [
+    "mariyanDevDesignTest.mariyan_dev_appBundle!11"
+  ],
+  "BoundArguments": {
+    "rvtFile": {
+      "localName": "local.rvt",
+      "url": "https://cdn.us.oss.api.autodesk.com/oss/v2/signedresources/86d5f030-f766-45c3-82ad-3295d598c6c6?region=US"
+    },
+    "result": {
+      "localName": "result.rvt",
+      "url": "https://cdn.us.oss.api.autodesk.com/oss/v2/signedresources/3f096be9-58ad-486a-bc3a-8251ef8aa6ec?region=US",
+      "verb": "put"
+    }
+  },
+  "Quotas": {
+    "limitProcessingTimeSec": 10800,
+    "limitTotalUncompressedAppsSizeInMB": 5000
+  }
+}
+[08/26/2023 06:03:09] Starting work item f928e4e2a28f427995ae7f5faef9a832
+[08/26/2023 06:03:09] Start download phase.
+[08/26/2023 06:03:09] Start downloading input: verb - 'GET', url - 'https://cdn.us.oss.api.autodesk.com/oss/v2/signedresources/86d5f030-f766-45c3-82ad-3295d598c6c6?region=US'
+[08/26/2023 06:03:09] End downloading file. Source=https://cdn.us.oss.api.autodesk.com/oss/v2/signedresources/86d5f030-f766-45c3-82ad-3295d598c6c6?region=US,LocalFile=T:\Aces\Jobs\f928e4e2a28f427995ae7f5faef9a832\local.rvt,BytesDownloaded=684032,Duration=315ms
+[08/26/2023 06:03:09] End download phase successfully.
+[08/26/2023 06:03:09] Start preparing script and command line parameters.
+[08/26/2023 06:03:09] Command line: [ /i "T:\Aces\Jobs\f928e4e2a28f427995ae7f5faef9a832\local.rvt" /al "T:\Aces\Applications\03bf1602bcbde6ea600ca74c35a7f5ae.mariyanDevDesignTest.mariyan_dev_appBundle[11].package"]
+[08/26/2023 06:03:09] End preparing script and command line parameters.
+[08/26/2023 06:03:09] Start script phase.
+[08/26/2023 06:03:09] Start Revit Core Engine standard output dump.
+[08/26/2023 06:03:09] ====== Revit is running: revitcoreconsole ======
+[08/26/2023 06:03:09] Current Exe path: T:\Aces\AcesRoot\23.0\coreEngine\Exe\revitcoreconsole.exe
+[08/26/2023 06:03:09] Echoing command line args:
+[08/26/2023 06:03:09]   0:/i
+[08/26/2023 06:03:09]   1:T:\Aces\Jobs\f928e4e2a28f427995ae7f5faef9a832\local.rvt
+[08/26/2023 06:03:09]   2:/al
+[08/26/2023 06:03:09]   3:T:\Aces\Applications\03bf1602bcbde6ea600ca74c35a7f5ae.mariyanDevDesignTest.mariyan_dev_appBundle[11].package
+[08/26/2023 06:03:09]   4:/isolate
+[08/26/2023 06:03:09]   5:HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_f928e4e2a28f427995ae7f5faef9a832
+[08/26/2023 06:03:09]   6:T:\Aces\Jobs\f928e4e2a28f427995ae7f5faef9a832\userdata
+[08/26/2023 06:03:10] Selected Revit\RCE install Path: (from app.config)
+[08/26/2023 06:03:10] Resolving location of Revit/RevitCoreEngine installation...
+[08/26/2023 06:03:10] Loading RCE ....
+[08/26/2023 06:03:14] Running user application....
+[08/26/2023 06:03:14] Found an addIn for registration: DeleteWalls.addin
+[08/26/2023 06:03:14] Language not specified, using English-United States(ENU) as default.
+[08/26/2023 06:03:19] Get RCE: (VersionBuild) 23.1.20.50 (VersionNumber) 2023 (SubVersionNumber) 2023.1.20
+[08/26/2023 06:03:32] Finished running.  Process will return: Success
+[08/26/2023 06:03:32] ====== Revit finished running: revitcoreconsole ======
+[08/26/2023 06:03:33] End Revit Core Engine standard output dump.
+[08/26/2023 06:03:33] End script phase.
+[08/26/2023 06:03:33] Start upload phase.
+[08/26/2023 06:03:33] Uploading 'T:\Aces\Jobs\f928e4e2a28f427995ae7f5faef9a832\result.rvt': verb - 'PUT', url - 'https://cdn.us.oss.api.autodesk.com/oss/v2/signedresources/3f096be9-58ad-486a-bc3a-8251ef8aa6ec?region=US'
+[08/26/2023 06:03:34] End upload phase successfully.
+[08/26/2023 06:03:34] Job finished with result Succeeded
+[08/26/2023 06:03:34] Job Status:
+{
+  "status": "success",
+  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/mariyanDevDesignTest/f928e4e2a28f427995ae7f5faef9a832/report.txt?X-Amz-Expires=48600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDVlGoKk8%2FK4g0H9tYhMRKiwuAC7gHZ%2FO7gk5JmI6m3FgIgd9Zqc%2BMctR2DQmwmta7C0MLB8zSVHb9OFntE%2BlZEW4EqgAMIVhADGgwyMjA0NzMxNTIzMTAiDKgCdYevbUw69d7otirdAphCoBxDQroin%2F3OTS2LXjC2ec%2FeKzwMMjoAQcHYWwSgPH66jVZqT3ctX4fsi5BuU510owlsUsXnNUlFDlPUgTWQk%2BdWYijqzHXdYA%2Fb59Uu7wJ9MVq5RCGpMGg9fqibFWCD07drWLNdXsALWCmQFu6FyUA6o9Ciu4DRP2z61DeQiJIvdkaII%2BXWnsEiQ2C3OU7ylK9xaiOgBS5%2BFuE0G4k6Wslfc3nau7qKQmGV5Gwv1phtDpMRzxtyLRmY%2F0Yq0rB1OrSZgpVmNn2FLwWH%2BJm0e6T%2FB5gD1rEwFjedaKEH8gIzMSZZfThTi0NUfA7L785HqmceuJZRPG940y2diF7YN1dTLTKs%2FMLn9ts2s0rqU8y1THgn8WEbehHmGAB4lEAlZ%2FrGRApa5tFWu3QYYrqgsBtt%2B52t61GpdHHEkqoclMK5HSmXzQnL8SvP8XC3777EbiQzmWCSPm9b%2BYkwh4CmpwY6ngHtBxcpMwDlYEavY7hau%2B0TUnq7SHQuHG7YgXqfJv59PC6o52jHurWBEBvHgFr01cannepaU0GenqN%2BXg98WDi6yI1xOG%2BRl7krckLA2gtYSKq132eNbJZsy4afMJAjVAiMMaMk%2BXY%2F4tIc3g0aWRboSXVKz%2FvjnRzyOniPniZ8DplKv0UbhwNZttBBd6kQXAkNkaHk5G0KRvJIMj1Fkg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATGVJZKM3LSPZOQF6/20230826/us-east-1/s3/aws4_request&X-Amz-Date=20230826T060308Z&X-Amz-SignedHeaders=host&X-Amz-Signature=14ff0cf883f916ac06e90e074514e222375ce115bcadb7591430fbfe2f3d1caf",
+  "stats": {
+    "timeQueued": "2023-08-26T06:03:08.9861428Z",
+    "timeDownloadStarted": "2023-08-26T06:03:09.1321511Z",
+    "timeInstructionsStarted": "2023-08-26T06:03:09.6190372Z",
+    "timeInstructionsEnded": "2023-08-26T06:03:33.7379207Z",
+    "timeUploadEnded": "2023-08-26T06:03:34.1729465Z",
+    "bytesDownloaded": 684032,
+    "bytesUploaded": 655360
+  },
+  "id": "f928e4e2a28f427995ae7f5faef9a832"
+}
